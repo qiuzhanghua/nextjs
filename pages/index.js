@@ -3,32 +3,27 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="flex-1 min-h-screen md:bg-clip-padding">
       <Head>
         <title>NextJS</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          I am using <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
+          <div className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
+              <div>
+                  <div className="text-xl font-medium text-red-500">WeChat</div>
+                  <p className="text-blue-500">You have a new message!</p>
+              </div>
+          </div>
       </main>
 
       <footer className={styles.footer}>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
+          href="https://github.com/qiuzhanghua"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+          https://github.com/qiuzhanghua
         </a>
       </footer>
     </div>
